@@ -1,23 +1,21 @@
 #include <iostream>
 #include <cmath>
 #include <string>
-	using namespace std;
+#include <algorithm>
+
+using namespace std;
 
 	int main() 
 	{
-		setlocale(LC_ALL, "Russian");
-		char alfa[30];
-		cout << "Введите строку из 30  букв" << ": ";
-		cin >> alfa;
-		for (int i = 0; i < strlen(alfa) - 1; i++) 
+		const int SIZE = 30;
+		string strng;
+		char str[SIZE];
+		cout << "Введите строку из 30 символов: ";
+		cin >> strng;
+		for (int i = 0; i < SIZE; i++) 
 		{
-			for (int j = strlen(alfa) - 1; i < j; j--) 
-			{
-				if (alfa[j] < alfa[j - 1]) 
-				{
-					swap(alfa[j], alfa[j - 1]);
-				}
-			}
+			str[i] = strng[i];
 		}
-		cout << alfa;
+		sort(strng.begin(), strng.end());
+		cout << strng << endl;
 	}

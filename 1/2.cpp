@@ -14,6 +14,13 @@ int main()
 	cout << "Сложение" << endl << a + b << "\n";
 	cout << "Вычитание" << endl << a - b << "\n";
 	cout << "Умножение" << endl << a * b << "\n";
-	cout << "Деление" << endl << a / b << "\n";
+	if (b != 0)
+	{
+		cout << "Деление" << endl << a / b << "\n";
+	}
+	else
+	{
+		cout << "Деление на 0 невозможно" << endl;
+	}
 
 }

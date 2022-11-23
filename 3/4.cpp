@@ -6,16 +6,16 @@
 
 	int main() 
 	{
-		setlocale(LC_ALL, "Russian");
-		string text;
-		ifstream Rfile("1.txt");
-		getline(Rfile, text);
-		Rfile.close();
-		for (int i = 0; i < text.size(); i++) 
+		ifstream file("1.txt");
+		string str;
+		while (getline(file, str)) 
 		{
-			if ((47 <= int(text[i])) && (58 >= int(text[i]))) 
+			for (int i = 0; i < str.length(); i++) 
 			{
-				cout << text[i];
+				if (isdigit(str[i])) 
+				{
+					cout << str[i];
+				}
 			}
 		}
 

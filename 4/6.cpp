@@ -5,7 +5,7 @@ using namespace std;
 int main(){
     char c;
     int i;
-    cout << "Введите символ: ";
+    cout << "??????? ??????: ";
     cin >> c;
     if (c == 'I'){
         i = 1;
@@ -22,7 +22,7 @@ int main(){
     } else if (c == 'M'){
         i = 1000;
     } else {
-        cout << "Неверный символ" << endl;
+        cout << "???????? ??????" << endl;
     }
-    cout << "Значение: " << i << endl;
+    cout << "????????: " << i << endl;
 }

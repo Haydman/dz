@@ -14,12 +14,11 @@
 		cin >> R;
 		cout << "r = ";
 		cin >> r;
-		cout << "l = ";
-		cin >> l;
+		l = sqrt(pow(R, 2) + pow(h, 2));
 		float R1, r1;
 		R1 = pow(R, 2);
 		r1 = pow(r, 2);
 		cout << "V = " << (p * h * (R1 + R * r + r1)) / 3 << "\n";
 		cout << "S = " << p * (R1 + (R + r) * l + r1);
-
+		
 	}
