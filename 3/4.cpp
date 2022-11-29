@@ -16,6 +16,10 @@
 				{
 					cout << str[i];
 				}
+				else 
+				{
+					cout << " ";
+				}
 			}
 		}
 
