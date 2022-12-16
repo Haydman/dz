@@ -6,9 +6,9 @@ using namespace std;
 int main()
 {
     setlocale(0, "rus");
-    ifstream file("C://Users//Zzz//Documents//HomeWork_5_task_3_1.txt");
+    ifstream file("HomeWork_5_task_3_1.txt");
     string line;
-    ofstream to_file("C://Users//Zzz//Documents//HomeWork_5_task_3_1_replaced.txt");
+    ofstream to_file("HomeWork_5_task_3_1_replaced.txt");
     char replaced = ' ';
     char to = '_';
     while (getline(file, line)) {
