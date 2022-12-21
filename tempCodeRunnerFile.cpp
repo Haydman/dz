@@ -1,1 +1,0 @@
-    TypeArray(arr, SIZE);
