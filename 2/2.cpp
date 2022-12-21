@@ -13,7 +13,7 @@
 		float w, l, s, x1;
 		if (x == 0) 
 		{
-			cout << "Неподходящий x";
+			cout << "not correct x";
 		}
 		else 
 		{
@@ -27,7 +27,7 @@
 				x1 = pow(x, 2);
 				if (a < x1) 
 				{
-					cout << "Решений нет";
+					cout << "no solutions";
 				}
 				else 
 				{

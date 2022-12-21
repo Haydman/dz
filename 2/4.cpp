@@ -8,7 +8,7 @@
 		setlocale(LC_ALL, "Russian");
 		float N = 0;
 		while ((N <= 0) || (N != int(N))) {
-			cout << "Введите натуральное число N = ";
+			cout << "Enter a number N = ";
 			cin >> N;
 		}
 		int i = 0;
